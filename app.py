@@ -10,5 +10,10 @@ def run_colab():
     return jsonify(message='colab notebook ran successfully')
 
 
+@app.run("/")
+def hello():
+    return jsonify(message="Server is running!")
+
+
 if __name__ == "__main__":
     app.run()
